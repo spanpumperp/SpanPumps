@@ -1,0 +1,138 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  overflow:hidden;
+}
+
+.dashboard{
+  width:100vw;
+  height:100vh;
+  background:#efefef;
+}
+
+/* HEADER */
+
+.header{
+  height:100px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:2px solid #1f6be0;
+  padding:0 15px;
+}
+
+.logo{
+  height:90px;
+}
+
+.top-menu{
+  display:flex;
+  gap:13px;
+  align-items:center;
+}
+
+.menu-btn{
+  background:#3f6cbc;
+  color:yellow;
+  padding:5px 12px;
+  border-radius:4px;
+  text-decoration:none;
+  font-size:12px;
+  border:1px solid #244e9b;
+}
+
+/* DROPDOWN */
+
+.dropdown{
+  position:relative;
+}
+
+.dropdown-content{
+  display:none;
+  position:absolute;
+  top:38px;
+  left:0;
+  min-width:220px;
+  background:white;
+  border:1px solid #00a2ff;
+  border-radius:20px;
+  z-index:1000;
+}
+
+.dropdown-content a{
+  display:block;
+  padding:10px;
+  text-decoration:none;
+  color:black;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+}
+
+.title-section{
+  text-align:center;
+}
+
+.title-section h1{
+  font-size:08px;
+  font-weight:bold;
+}
+
+.title-section h2{
+  font-size:22px;
+}
+
+/* BODY */
+
+.dashboard-body{
+  display:flex;
+  height:calc(100vh - 110px);
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  width:100px;
+  background:#4772bf;
+  color:yellow;
+  padding:15px 07px;
+}
+
+.sidebar h3{
+  margin-bottom:35px;
+  font-size:18px;
+}
+
+/* CONTENT */
+
+.content{
+  flex:1;
+  margin:5px;
+  border:1px solid #1f6be0;
+  border-radius:35px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:11px;
+
+  padding:70px;
+}
+
+.card{
+  border:1px solid #1f6be0;
+  border-radius:25px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:18px;
+  height:130px;
+
+  background:#f7f7f7;
+}
